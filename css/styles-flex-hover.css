@@ -1,0 +1,320 @@
+/* цвет основного текста color: #757575;
+цвет дополнительгого текста color: #212121; 
+цвет активного текста color: #2196F3; */
+
+/* Global CSS*/
+:root {
+  --main-text-color: #757575;
+  --additional-text-color: #212121;
+  --active-color: #2196f3;
+}
+
+body {
+  font-family: 'Roboto';
+  color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Header */
+header {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+header ul {
+  list-style-type: none;
+}
+header a {
+  text-decoration: none;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--additional-text-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.active {
+  color: var(--active-color);
+}
+.nav-item a {
+  color: var(--additional-text-color);
+}
+.active a {
+  color: var(--active-color);
+}
+.nav-item a:hover,
+.nav-item a:focus {
+  color: var(--active-color);
+}
+.contacts-item a {
+  color: var(--main-text-color);
+}
+.contacts-item a:hover,
+.contacts-item a:focus {
+  color: var(--active-color);
+}
+/* Footer */
+footer {
+  color: #ffffff;
+  background-color: #2f303a;
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+}
+footer .logo {
+  color: #ffffff;
+  font-size: 22px;
+}
+footer .contacts-item a {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+.address-item {
+  font-size: 14px;
+  font-style: normal;
+}
+.join {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.87;
+  text-transform: uppercase;
+}
+.copy {
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+/* Button */
+.button {
+  color: var(--additional-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: #f5f4fa;
+}
+.button.main {
+  color: #ffffff;
+  background-color: var(--active-color);
+}
+/*А нужна ли эта кнопка, если есть "просто кнопка" и "нажатая кнопка"? 
+.button.secondary {
+  color: var(--additional-text-color);
+  background-color: #f5f4fa;
+} */
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: var(--active-color);
+}
+
+/* HOME PAGE */
+/* Hero */
+.hero {
+  text-align: center;
+}
+.hero-title {
+  color: lime;
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Main */
+.title {
+  color: var(--additional-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  text-align: center;
+}
+.item-title {
+  font-size: 14px;
+  line-height: 0.87;
+  text-transform: uppercase;
+}
+.item-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Features */
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.features .title {
+  visibility: hidden;
+}
+.features ul {
+  list-style-type: none;
+}
+.features .item-text {
+  text-align: left;
+}
+
+/* We do */
+.we-do ul {
+  list-style-type: none;
+}
+.we-do a {
+  text-decoration: none;
+}
+.we-do-list {
+  display: flex;
+  justify-content: space-around;
+}
+.we-do-item {
+  display: block;
+  position: relative;
+}
+.we-do .item-image {
+  display: block;
+  background-color: unset;
+}
+.we-do .item-title {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: -7px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  opacity: 0;
+}
+.we-do-item:hover .item-title {
+  opacity: 1;
+}
+
+/* Team */
+.team ul {
+  list-style-type: none;
+}
+.team {
+  font-size: 16px;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+  justify-content: space-around;
+}
+.team .item-title {
+  font-size: 16px;
+  line-height: 1.18;
+  font-weight: 500;
+  text-transform: none;
+}
+.social {
+  display: flex;
+}
+.social-item a:hover,
+.social-item a:focus {
+  background-color: var(--active-color);
+}
+
+/*Clients */
+.clients ul {
+  list-style-type: none;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-around;
+}
+.clients-item a:hover,
+.clients-item a:focus {
+  background-color: var(--active-color);
+}
+
+/* PORTFOLIO PAGE */
+/* Main */
+.works {
+  text-align: center;
+}
+.our-works h1 {
+  visibility: hidden;
+}
+.our-works a {
+  text-decoration: none;
+}
+.our-works ul {
+  list-style-type: none;
+}
+.filters-list {
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.our-works .button {
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+  margin-right: 10px;
+}
+.works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.works img {
+  display: block;
+}
+.works-item {
+  width: 370px;
+  position: relative;
+}
+.item-link {
+  display: block;
+  text-decoration: none;
+}
+.item-image {
+  background: rgba(33, 150, 243, 0.9);
+}
+.item-title {
+  color: var(--additional-text-color);
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.filter-type {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+}
+.item-description {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.56;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+.works-item:hover {
+  cursor: pointer;
+}
+.works-item:hover img {
+  opacity: 0.1;
+}
+.works-item:hover .item-description {
+  opacity: 1;
+}
