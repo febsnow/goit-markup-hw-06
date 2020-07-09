@@ -397,20 +397,51 @@
             </li>
           </ul>
         </div>
-        <div class="join-form">
-          <p class="join">Подпишитесь на рассылку</p>
-          <!-- <form action="">
-                      <input type="email" name="" id="" placeholder="E-mail" />
-                      <input type="submit" value="Подписаться" />
-                  </form> -->
-        </div>
+        <form class="join-form">
+          <label class="join" for="subscribe">Подпишитесь на рассылку</label>
+          <div class="subscription">
+            <input class="join-form-field" type="email" name="email" id="subscribe" placeholder="E-mail" />
+            <button class="button main" type="button">Подписаться</button>
+          </div>
+        </form>
       </div>
       <small class="copy">2020 | Developed by GoIT Students</small>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h4 class="modal-title">Оставьте свои данные, мы вам перезвоним</h4>
-      <button class="button" data-modal-close>Закрыть меня</button>
+        <form class="clients-form" >
+          <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>
+         <div class="form-row">
+            <label for="clients-name">Имя</label>
+            <input class="form-field" type="text" id="clients-name" name="name" placeholder=" ">
+            <svg class="field-icon">
+              <use href="./images/modal-icons.svg#icon-Name"></use>
+            </svg>
+         </div>
+          <div class="form-row">
+            <label for="clients-phone">Телефон</label>
+            <input class="form-field" type="tel" id="clients-phone" name="tel" placeholder=" ">
+          </div>
+          <div class="form-row">
+            <label for="clients-mail">Почта</label>
+            <input class="form-field" type="email" id="clients-mail" name="email" placeholder="">
+            </div>
+        <div class="form-row">
+            <label for="clients-comments">Комментарии</label>
+            <textarea class="form-field" name="comments" id="clients-comments" placeholder=" "></textarea>
+        </div>
+         <div class="agreement">
+            <input id="agreement" name="agreement" type="checkbox" required value="agree">
+            <label for="agreement"> Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#"> Условия договора</a></label>
+         </div>
+          
+          <button class="button main" type="submit" data-modal-close>Отправить</button>
+          <button class="button-close" data-modal-close>
+            <svg class="close">
+              <use href="./images/modal-icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
