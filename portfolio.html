@@ -243,8 +243,13 @@
         <form class="join-form">
           <label class="join" for="subscribe">Подпишитесь на рассылку</label>
           <div class="subscription">
-            <input class="join-form-field" type="email" name="email" id="subscribe" placeholder="E-mail" />
-            <button class="button main" type="button">Подписаться</button>
+            <input class="join-form-field" type="email" name="email" id="subscribe" placeholder="E-mail@mail.com" />
+            <button class="button main" type="button">
+              Подписаться
+              <svg class="send-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>

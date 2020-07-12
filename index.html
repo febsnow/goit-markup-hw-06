@@ -39,7 +39,7 @@
           <li class="contacts-item">
             <a class="contacts-item-link" href="tel:+380961111111">
               <svg class="icon-phone">
-                <use href="./images/icons.svg#icon-phone"></use>
+                <use href="./images/icons.svg#icon-cellphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -400,8 +400,12 @@
         <form class="join-form">
           <label class="join" for="subscribe">Подпишитесь на рассылку</label>
           <div class="subscription">
-            <input class="join-form-field" type="email" name="email" id="subscribe" placeholder="E-mail" />
-            <button class="button main" type="button">Подписаться</button>
+            <input class="join-form-field" type="email" name="email" id="subscribe" placeholder="E-mail@mail.com" />
+            <button class="button main" type="button">Подписаться
+              <svg class="send-icon" >
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
@@ -409,36 +413,42 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="clients-form" >
+        <form class="clients-form" autocomplete="off" >
           <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>
-         <div class="form-row">
-            <label for="clients-name">Имя</label>
-            <input class="form-field" type="text" id="clients-name" name="name" placeholder=" ">
-            <svg class="field-icon">
-              <use href="./images/modal-icons.svg#icon-Name"></use>
+         <div class="form-field">
+           <input class="form-input" type="text" id="clients-name" name="name" placeholder=" " required>
+           <label class="form-label" for="clients-name">Имя</label>
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-person"></use>
             </svg>
          </div>
-          <div class="form-row">
-            <label for="clients-phone">Телефон</label>
-            <input class="form-field" type="tel" id="clients-phone" name="tel" placeholder=" ">
+          <div class="form-field">
+            <input class="form-input" type="tel" id="clients-phone" name="tel" placeholder=" " required>
+            <label class="form-label" for="clients-phone">Телефон</label>
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
           </div>
-          <div class="form-row">
-            <label for="clients-mail">Почта</label>
-            <input class="form-field" type="email" id="clients-mail" name="email" placeholder="">
-            </div>
-        <div class="form-row">
-            <label for="clients-comments">Комментарии</label>
-            <textarea class="form-field" name="comments" id="clients-comments" placeholder=" "></textarea>
+          <div class="form-field">
+            <input class="form-input" type="email" id="clients-mail" name="email" placeholder=" " required>
+            <label class="form-label" for="clients-mail">Почта</label>
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        <div class="form-field comments">
+          <textarea class="form-input" name="comments" id="clients-comments" placeholder=" "></textarea>
+          <label class="comments-label" for="clients-comments">Комментарии</label>
         </div>
-         <div class="agreement">
-            <input id="agreement" name="agreement" type="checkbox" required value="agree">
-            <label for="agreement"> Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#"> Условия договора</a></label>
-         </div>
-          
-          <button class="button main" type="submit" data-modal-close>Отправить</button>
+          <label class="agreement">
+            <input class="checkbox" name="agreement" type="checkbox" value="agree" required>
+            <span class="agreement-icon"></span>
+            <span> Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#"> Условия договора</a></span>
+          </label>
+          <button class="button main" type="submit">Отправить</button>
           <button class="button-close" data-modal-close>
-            <svg class="close">
-              <use href="./images/modal-icons.svg#icon-cross"></use>
+            <svg class="icon-close">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
         </form>
